@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B12 Face Wash — Pure Nature, Radiant You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">B<span>12</span></div>
+    <ul class="nav__links">
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#ingredients">Ingredients</a></li>
+      <li><a href="#how">How to Use</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="sun">☀</span><span class="moon">☽</span>
+      </button>
+      <a href="#buy" class="btn btn--nav">Buy Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__inner">
+      <ul class="mobile-menu__links">
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#ingredients">Ingredients</a></li>
+        <li><a href="#how">How to Use</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+      <a href="#buy" class="btn btn--primary mobile-menu__cta">Shop Now →</a>
+    </div>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-text">PURE</div>
+    <div class="hero__content">
+      <div class="hero__tag reveal">100% Natural Formula</div>
+      <h1 class="hero__title reveal">
+        Reveal Your<br /><em>Radiant</em><br />Skin
+      </h1>
+      <p class="hero__desc reveal">
+        B12 Face Wash harnesses the power of nature's finest botanicals
+        to cleanse, nourish, and transform your skin — every single day.
+      </p>
+      <div class="hero__cta reveal">
+        <a href="#buy" class="btn btn--primary">Shop Now</a>
+        <a href="#benefits" class="btn btn--ghost">Learn More</a>
+      </div>
+      <div class="hero__stats reveal">
+        <div class="stat"><span class="stat__num" data-target="98">0</span><span>%</span><small>Natural</small></div>
+        <div class="stat__divider"></div>
+        <div class="stat"><span class="stat__num" data-target="50">0</span><span>K+</span><small>Happy Skin</small></div>
+        <div class="stat__divider"></div>
+        <div class="stat"><span class="stat__num" data-target="7">0</span><span></span><small>Days Result</small></div>
+      </div>
+    </div>
+    <div class="hero__product" id="heroProduct">
+      <div class="product-glow"></div>
+      <div class="product-ring ring-1"></div>
+      <div class="product-ring ring-2"></div>
+      <div class="product-ring ring-3"></div>
+      <img src="product.png" alt="B12 Face Wash" class="product-img" id="productImg" onerror="this.style.display='none'; document.getElementById('productFallback').style.display='flex'" />
+      <div class="product-fallback" id="productFallback">
+        <div class="bottle">
+          <div class="bottle__nozzle"></div>
+          <div class="bottle__cap"></div>
+          <div class="bottle__shoulder"></div>
+          <div class="bottle__body">
+            <div class="bottle__label">
+              <span class="label__b12">B12</span>
+              <span class="label__line"></span>
+              <span class="label__text">FACE WASH</span>
+              <span class="label__sub">100% Natural</span>
+            </div>
+            <div class="bottle__stripe"></div>
+          </div>
+          <div class="bottle__base"></div>
+        </div>
+      </div>
+      <div class="floating-badge badge-1">Vitamin B12</div>
+      <div class="floating-badge badge-2">Aloe Vera</div>
+      <div class="floating-badge badge-3">Zero Chemicals</div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══ SCROLL STORY (sticky product) ═══ -->
+  <section class="scroll-story" id="scrollStory">
+    <div class="scroll-story__sticky">
+      <div class="story-product" id="storyProduct">
+        <div class="story-product__glow"></div>
+        <img src="product.png" alt="B12 Face Wash" class="story-product__img" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="story-product__bottle story-bottle-fallback">
+          <div class="bottle">
+            <div class="bottle__nozzle"></div>
+            <div class="bottle__cap"></div>
+            <div class="bottle__shoulder"></div>
+            <div class="bottle__body">
+              <div class="bottle__label">
+                <span class="label__b12">B12</span>
+                <span class="label__line"></span>
+                <span class="label__text">FACE WASH</span>
+                <span class="label__sub">100% Natural</span>
+              </div>
+              <div class="bottle__stripe"></div>
+            </div>
+            <div class="bottle__base"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-story__panels">
+      <!-- Panel 1 -->
+      <div class="story-panel" data-position="left">
+        <div class="story-panel__inner reveal-panel">
+          <div class="story-step">01</div>
+          <h2 class="story-panel__title">Born from<br/><em>Nature</em></h2>
+          <p>Crafted with botanical extracts sourced from pristine environments. Every drop of B12 Face Wash carries the purest essence of nature's healing power.</p>
+          <div class="story-tags">
+            <span>🌿 Botanical</span>
+            <span>🌊 Pure Water</span>
+            <span>🍃 Organic</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2 -->
+      <div class="story-panel" data-position="right">
+        <div class="story-panel__inner reveal-panel">
+          <div class="story-step">02</div>
+          <h2 class="story-panel__title">Deep<br/><em>Cleansing</em></h2>
+          <p>Penetrates deep into pores, dissolving impurities, excess oil, and environmental pollutants — leaving your skin feeling refreshed and breathable.</p>
+          <div class="story-tags">
+            <span>✨ Pore Care</span>
+            <span>💧 Oil Control</span>
+            <span>🧪 pH Balanced</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 3 -->
+      <div class="story-panel" data-position="center">
+        <div class="story-panel__inner reveal-panel">
+          <div class="story-step">03</div>
+          <h2 class="story-panel__title">Radiant<br/><em>Results</em></h2>
+          <p>See visible difference in just 7 days. Brighter, smoother, and healthier-looking skin that glows from within — naturally, without harsh chemicals.</p>
+          <div class="story-tags">
+            <span>⚡ 7-Day Glow</span>
+            <span>🌟 Even Tone</span>
+            <span>💎 Youthful</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ BENEFITS ═══ -->
+  <section class="benefits" id="benefits">
+    <div class="section-header reveal">
+      <div class="section-tag">Why B12?</div>
+      <h2>Skin Benefits That<br/><em>Actually Work</em></h2>
+    </div>
+    <div class="benefits__grid">
+      <div class="benefit-card reveal-card" style="--delay:0s">
+        <div class="benefit-card__icon">🌿</div>
+        <h3>100% Natural</h3>
+        <p>No parabens, sulfates, or synthetic fragrances. Pure botanical goodness in every wash.</p>
+      </div>
+      <div class="benefit-card reveal-card" style="--delay:0.1s">
+        <div class="benefit-card__icon">✨</div>
+        <h3>Instant Glow</h3>
+        <p>Experience brighter skin from the very first use. Natural extracts boost radiance instantly.</p>
+      </div>
+      <div class="benefit-card reveal-card" style="--delay:0.2s">
+        <div class="benefit-card__icon">💧</div>
+        <h3>Deep Hydration</h3>
+        <p>Aloe vera and hyaluronic-rich botanicals lock moisture for all-day soft skin.</p>
+      </div>
+      <div class="benefit-card reveal-card" style="--delay:0.3s">
+        <div class="benefit-card__icon">🛡️</div>
+        <h3>Anti-Pollution</h3>
+        <p>Forms a protective barrier against environmental damage and free radicals.</p>
+      </div>
+      <div class="benefit-card reveal-card" style="--delay:0.4s">
+        <div class="benefit-card__icon">⚖️</div>
+        <h3>pH Balanced</h3>
+        <p>Precisely pH 5.5 — same as healthy skin — to maintain your natural barrier.</p>
+      </div>
+      <div class="benefit-card reveal-card" style="--delay:0.5s">
+        <div class="benefit-card__icon">🌙</div>
+        <h3>All Skin Types</h3>
+        <p>Gentle enough for sensitive skin, powerful enough for oily and combination skin.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ INGREDIENTS ═══ -->
+  <section class="ingredients" id="ingredients">
+    <div class="ingredients__left reveal">
+      <div class="section-tag">Key Ingredients</div>
+      <h2>Nature's Finest<br/><em>Botanicals</em></h2>
+      <p>We believe the best skincare ingredients grow in the earth, not in a lab. Every ingredient is carefully selected and sustainably sourced.</p>
+      <a href="#buy" class="btn btn--primary">Experience It</a>
+    </div>
+    <div class="ingredients__right">
+      <div class="ingredient-item reveal-card" style="--delay:0s">
+        <div class="ingredient-icon">🌵</div>
+        <div>
+          <h4>Aloe Vera</h4>
+          <p>Soothes, hydrates, and repairs skin damage with natural enzymes.</p>
+        </div>
+        <div class="ingredient-bar"><div class="ingredient-fill" data-width="95"></div></div>
+      </div>
+      <div class="ingredient-item reveal-card" style="--delay:0.1s">
+        <div class="ingredient-icon">🫒</div>
+        <div>
+          <h4>Olive Squalane</h4>
+          <p>Mimics skin's natural oils for seamless moisture absorption.</p>
+        </div>
+        <div class="ingredient-bar"><div class="ingredient-fill" data-width="88"></div></div>
+      </div>
+      <div class="ingredient-item reveal-card" style="--delay:0.2s">
+        <div class="ingredient-icon">🫧</div>
+        <div>
+          <h4>Green Tea Extract</h4>
+          <p>Powerful antioxidants fight aging and protect against UV damage.</p>
+        </div>
+        <div class="ingredient-bar"><div class="ingredient-fill" data-width="82"></div></div>
+      </div>
+      <div class="ingredient-item reveal-card" style="--delay:0.3s">
+        <div class="ingredient-icon">🌸</div>
+        <div>
+          <h4>Rose Hip Oil</h4>
+          <p>Rich in Vitamin C to brighten and even skin tone naturally.</p>
+        </div>
+        <div class="ingredient-bar"><div class="ingredient-fill" data-width="90"></div></div>
+      </div>
+      <div class="ingredient-item reveal-card" style="--delay:0.4s">
+        <div class="ingredient-icon">💎</div>
+        <div>
+          <h4>Vitamin B12</h4>
+          <p>Core active — stimulates cell renewal and reduces hyperpigmentation.</p>
+        </div>
+        <div class="ingredient-bar"><div class="ingredient-fill" data-width="98"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ HOW TO USE ═══ -->
+  <section class="how-to" id="how">
+    <div class="section-header reveal">
+      <div class="section-tag">Ritual</div>
+      <h2>Your Daily<br/><em>Skin Ritual</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal-card" style="--delay:0s">
+        <div class="step__num">1</div>
+        <div class="step__icon">💦</div>
+        <h3>Wet Your Face</h3>
+        <p>Splash lukewarm water to open pores and prepare skin for cleansing.</p>
+      </div>
+      <div class="step__arrow">→</div>
+      <div class="step reveal-card" style="--delay:0.15s">
+        <div class="step__num">2</div>
+        <div class="step__icon">🫧</div>
+        <h3>Apply B12 Wash</h3>
+        <p>Pump a small amount and gently massage in circular motions for 60 seconds.</p>
+      </div>
+      <div class="step__arrow">→</div>
+      <div class="step reveal-card" style="--delay:0.3s">
+        <div class="step__num">3</div>
+        <div class="step__icon">❄️</div>
+        <h3>Rinse & Glow</h3>
+        <p>Rinse with cool water to close pores. Pat dry. Experience the difference.</p>
+      </div>
+    </div>
+    <div class="usage-tip reveal">
+      <div class="tip-icon">💡</div>
+      <p><strong>Pro Tip:</strong> Use morning and night for best results. After 7 days, you'll wonder how you ever lived without it.</p>
+    </div>
+  </section>
+
+  <!-- ═══ REVIEWS ═══ -->
+  <section class="reviews" id="reviews">
+    <div class="section-header reveal">
+      <div class="section-tag">Testimonials</div>
+      <h2>Real People,<br/><em>Real Results</em></h2>
+    </div>
+    <div class="reviews__track-wrap">
+      <div class="reviews__track" id="reviewsTrack">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"My skin has never felt this soft. After just one week, my friends started asking about my skincare routine!"</p>
+          <div class="review-author">
+            <div class="review-avatar">S</div>
+            <div><strong>Sarah M.</strong><small>Verified Buyer</small></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"I've tried dozens of face washes but B12 is different. The natural formula doesn't strip my skin at all."</p>
+          <div class="review-author">
+            <div class="review-avatar">R</div>
+            <div><strong>Raj K.</strong><small>Verified Buyer</small></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Sensitive skin struggles are OVER. This is the gentlest, most effective cleanser I've ever used. 10/10!"</p>
+          <div class="review-author">
+            <div class="review-avatar">A</div>
+            <div><strong>Aisha T.</strong><small>Verified Buyer</small></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"The glow is REAL. I use it twice daily and my hyperpigmentation has significantly faded. Love this product!"</p>
+          <div class="review-author">
+            <div class="review-avatar">M</div>
+            <div><strong>Maya L.</strong><small>Verified Buyer</small></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Finally a face wash that keeps my oily T-zone in check without drying out the rest of my face. Perfect!"</p>
+          <div class="review-author">
+            <div class="review-avatar">J</div>
+            <div><strong>James W.</strong><small>Verified Buyer</small></div>
+          </div>
+        </div>
+        <!-- Duplicate for infinite scroll -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"My skin has never felt this soft. After just one week, my friends started asking about my skincare routine!"</p>
+          <div class="review-author">
+            <div class="review-avatar">S</div>
+            <div><strong>Sarah M.</strong><small>Verified Buyer</small></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"I've tried dozens of face washes but B12 is different. The natural formula doesn't strip my skin at all."</p>
+          <div class="review-author">
+            <div class="review-avatar">R</div>
+            <div><strong>Raj K.</strong><small>Verified Buyer</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ BUY / CTA ═══ -->
+  <section class="buy" id="buy">
+    <div class="buy__bg-orb orb-1"></div>
+    <div class="buy__bg-orb orb-2"></div>
+    <div class="buy__content reveal">
+      <div class="section-tag">Limited Offer</div>
+      <h2>Transform Your Skin<br/><em>Starting Today</em></h2>
+      <p>Join 50,000+ people who've made B12 Face Wash their daily ritual.</p>
+      <div class="pricing-card">
+        <div class="pricing-badge">BEST VALUE</div>
+        <div class="pricing-name">B12 Face Wash</div>
+        <div class="pricing-size">150ml • 2-Month Supply</div>
+        <div class="pricing-price">
+          <span class="price-old">$29.99</span>
+          <span class="price-new">$19.99</span>
+        </div>
+        <ul class="pricing-perks">
+          <li>✓ Free Shipping</li>
+          <li>✓ 30-Day Money Back</li>
+          <li>✓ 100% Natural Formula</li>
+        </ul>
+        <button class="btn btn--primary btn--full" id="buyBtn">Add to Cart</button>
+      </div>
+      <div class="trust-badges">
+        <div class="trust-badge">🔒 Secure Checkout</div>
+        <div class="trust-badge">🚚 Free Delivery</div>
+        <div class="trust-badge">↩️ Easy Returns</div>
+      </div>
+    </div>
+    <div class="buy__product reveal">
+      <img src="product.png" alt="B12 Face Wash" class="buy-product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+      <div class="buy-product-fallback">
+        <div class="bottle bottle--large">
+          <div class="bottle__nozzle"></div>
+          <div class="bottle__cap"></div>
+          <div class="bottle__shoulder"></div>
+          <div class="bottle__body">
+            <div class="bottle__label">
+              <span class="label__b12">B12</span>
+              <span class="label__line"></span>
+              <span class="label__text">FACE WASH</span>
+              <span class="label__sub">100% Natural</span>
+            </div>
+            <div class="bottle__stripe"></div>
+          </div>
+          <div class="bottle__base"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">B<span>12</span></div>
+        <p>Pure nature. Radiant you. B12 Face Wash is crafted with love for skin that deserves the very best nature can offer.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#ingredients">Ingredients</a></li>
+          <li><a href="#how">How to Use</a></li>
+          <li><a href="#buy">Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__newsletter">
+        <h4>Stay Glowing</h4>
+        <p>Get skincare tips and exclusive offers.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" />
+          <button type="submit" class="btn btn--primary">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 B12 Face Wash. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="TikTok">🎵</a>
+        <a href="#" aria-label="YouTube">▶️</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Notification -->
+  <div class="cart-toast" id="cartToast">
+    <span>✓</span> Added to Cart! 🎉
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
